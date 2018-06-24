@@ -22,7 +22,7 @@
             filename : '[name].bundle.js',
             chunkFilename: '[name].chunk.js', //naming convention for the codesplitting
             path     : path.resolve(__dirname, 'public/'),
-            publicPath: isStaging ? 'https://stagingurl.com/assets/' : '/',
+            publicPath: isProduction ? '/testGHPages' : '/',
             // publicPath: isStaging ? 'https://stagingurl.com/assets/' : '/assets/',
          },
          module: {
